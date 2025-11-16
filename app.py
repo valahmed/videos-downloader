@@ -72,6 +72,7 @@ class UniversalDownloader:
                 'writeautomaticsub': True,
                 'subtitleslangs': ['en'],
                 'ignoreerrors': True,
+                'cookiefile': 'youtube_cookies.txt',  # Added cookies for YouTube to bypass bot detection
             }
             
             with yt_dlp.YoutubeDL(ydl_opts) as ydl:
